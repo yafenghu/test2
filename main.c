@@ -19,11 +19,12 @@
 //  Feb 2008
 //  Built with IAR Embedded Workbench Version: 3.42A
 //******************************************************************************
+这是一个测试，分支操作的测试，好像还有分支合并的功能
 #include  <msp430x14x.h>
 
 void main(void)
 {
-  P6DIR |= BIT2;P6OUT |= BIT2;              //�ص�ƽת��
+  P6DIR |= BIT2;P6OUT |= BIT2;              //¹ØµçÆ½×ª»»
   WDTCTL = WDT_MDLY_32;                     // Set Watchdog Timer interval to ~30ms
   IE1 |= WDTIE;                             // Enable WDT interrupt
   P2DIR |= BIT4;                            // Set P3.4 to output direction
